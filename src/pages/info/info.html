@@ -9,5 +9,8 @@
     <button ion-item *ngFor="let item of item" (click)="openPage(item.component)">
       {{item.nama}}
     </button>
+    <button ion-item (click)="showAlert()">
+      App Version
+    </button>
   </ion-list>
 </ion-content>

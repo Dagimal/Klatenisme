@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { InfoPage } from '../info/info';
 //candi
 import { PlaosanPage } from '../kontencandi/plaosan/plaosan';
@@ -12,9 +12,7 @@ import { PrambananPage } from '../kontencandi/prambanan/prambanan';
 import { SewuPage } from '../kontencandi/sewu/sewu';
 import { SojiwanPage } from '../kontencandi/sojiwan/sojiwan';
 import { UntoroyonoPage } from '../kontencandi/untoroyono/untoroyono';
-import { TestPage } from '../kontencandi/test/test';
 
-@IonicPage()
 @Component({
   selector: 'page-candi',
   templateUrl: 'candi.html',
@@ -70,11 +68,6 @@ export class CandiPage {
        'nama': 'Candi Untoroyono',
        'gambar': 'assets/img/candiuntoroyono.jpg',
        component: UntoroyonoPage
-     },
-     {
-       'nama': 'Candi test',
-       'gambar': 'assets/img/candiuntoroyono.jpg',
-       Component: TestPage
      }
   ];
 

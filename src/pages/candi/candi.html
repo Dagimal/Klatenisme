@@ -1,16 +1,15 @@
 <ion-header>
-  <ion-navbar color="bluesea">
+  <ion-navbar color="primary">
     <ion-icon name="information-circle" class="info" (click)="info()"></ion-icon>
     <ion-title>Candi di kota Klaten</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding id="cardView">
+<ion-content padding id="cardView" text-center>
   <ion-card *ngFor="let candi of candi">
-    <img src="{{candi.gambar}}">
-    <ion-card-header>
+    <img src="{{candi.gambar}}" (click)="openPage(candi.component)">
+    <ion-card-header (click)="openPage(candi.component)">
       {{candi.nama}}
     </ion-card-header>
-    <button ion-button clear (click)="openPage(candi.component)"><b>OPEN</b></button>
   </ion-card>
 </ion-content>
